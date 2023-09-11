@@ -1,0 +1,43 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-Account
+      author: bank team
+      changes:
+        - createTable:
+            tableName: Account
+            columns:
+              - column:
+                  name: account_id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+#              - column:
+#                  name: user_id
+#                  type: bigint
+              - column:
+                  name: password
+                  type: varchar(255)
+              - column:
+                  name: name
+                  type: varchar(255)
+              - column:
+                  name: email
+                  type: varchar(255)
+              - column:
+                  name: address
+                  type: varchar(1000)
+              - column:
+                  name: roles
+                  type: varchar(255)
+#        - addForeignKeyConstraint:
+#            baseTableName: Account
+#            baseColumnNames: user_id
+#            referencedTableName: users
+#            referencedColumnNames: user_id
+#            constraintName: fk_account_user
+
+
+
+

@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: schema-users
+      author: bank team
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: user_name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: password
+                  type: varchar(250)
+              - column:
+                  name: roles
+                  type: varchar(255)
+        - addPrimaryKey:
+            tableName: users
+            columnNames: user_name
+            constraintName: users_pk
+        - addUniqueConstraint:
+            tableName: users
+            columnNames: user_name
+            constraintName: users_uk_01

@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-users
+      author: bank team
+      changes:
+        - insert:
+            tableName: users
+            columns:
+#              - column:
+#                  name: user_id
+#                  value: '1'
+              - column:
+                  name: user_name
+                  value: Admin
+              - column:
+                  name: password
+                  value: '$2a$10$nkCK1D2wn58.tAe72lctc.nFVvolE5u1ekhJtUUgXyUDnhVCEWlBS'
+              - column:
+                  name: roles
+                  value: ADMIN
+
+        - insert:
+            tableName: users
+            columns:
+#              - column:
+#                  name: user_id
+#                  value: '2'
+              - column:
+                  name: user_name
+                  value: 'account2'
+              - column:
+                  name: password
+                  value: '$2a$10$VsO/M6RIPnSZz8QHFVRnk.i5KrURTU8qKrPLchsQ515UVESVe7n/.'
+              - column:
+                  name: roles
+                  value: ACCOUNT_HOLDER
+        - insert:
+            tableName: users
+            columns:
+#              - column:
+#                  name: user_id
+#                  value: '3'
+              - column:
+                  name: user_name
+                  value: 'account1'
+              - column:
+                  name: password
+                  value: '$2a$10$80EogsEKPl.3cd2hTD8VwefSRqMU94uzY7Fzfw8Vnflcih43/OpWa'
+              - column:
+                  name: roles
+                  value: ACCOUNT_HOLDER

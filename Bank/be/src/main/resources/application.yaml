@@ -1,0 +1,35 @@
+logging:
+  level:
+    sql: debug
+    '[com.redmath]': debug
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}] ${HOSTNAME}"
+
+spring:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+#  datasource:
+#    url: ${Account.db.url}
+#    username: ${Account.db.username}
+#    password: ${Account.db.password}
+#  security:
+#    user:
+#      name: test
+#      password: test
+  h2:
+    console:
+      enabled: true
+  liquibase:
+    contexts: ${Accounts.liquibase.contexts:}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: when-authorized
+
+spring.profiles.include: local
