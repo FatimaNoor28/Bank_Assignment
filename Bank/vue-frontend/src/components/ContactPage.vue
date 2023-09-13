@@ -28,33 +28,32 @@
     <div class="container mt-5">
       <h1 class="mb-4">Contact Us</h1>
       <p class="mb-4">Feel free to contact us for any inquiries or feedback.</p>
-  
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="bold-text">Contact Information:</div>
+            <p><strong>Email:</strong> contact@example.com</p>
+            <p><strong>Phone:</strong> +123 456 789</p>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+          </div>
+          <div class="col-md-6">
+            <img src="./images/3608.avif" alt="Contact Image" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+
       <!-- Contact Form -->
-      <div class="row">
+      <div class="row mt-4">
         <div class="col-md-6">
           <form>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <!-- Your Form Fields Here -->
           </form>
-        </div>
-        
-        <!-- Contact Image -->
-        <div class="col-md-6">
-          <img src="/path/to/your/image.jpg" alt="Contact Image" class="img-fluid rounded">
         </div>
       </div>
     </div>
+
   </template>
   
   <script>

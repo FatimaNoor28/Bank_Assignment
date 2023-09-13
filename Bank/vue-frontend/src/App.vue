@@ -33,7 +33,7 @@ export default {
 }
 
 header {
-  background-color: darkseagreen;
+  background-color: #7da4ad;
   color: #fff;
   text-align: center;
   padding: 20px 0;

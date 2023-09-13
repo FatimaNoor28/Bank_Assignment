@@ -16,10 +16,9 @@
   </script> -->
   
 <template>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid" style="   background-color: #7da4ad;">
-        <a class="navbar-brand" href="#">Mouri</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+  <body class="main">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="   background-color: #7da4ad;">
+        <a class="navbar-brand" href="#">XYZ Bank</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent"
           data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,9 +40,8 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
-    <div class="content">
+    <div class="content container">
       <h2>Account Actions</h2>
       <div class="action-buttons">
         <button @click="viewAccounts">View Accounts</button>
@@ -84,6 +82,33 @@ export default {
 </script>
   
 <style scoped>
+.main{
+  background-image: url('./images/bank.jpg'); /* Specify the path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Text color on top of the background image */
+  padding-top: 10vw;
+  padding-bottom: 10vw; 
+}
+
+.container {
+    max-width: 40vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+    padding: 5vh;
+    border: 1vw solid #ccc;
+    border-radius: 2vw;
+    box-shadow: 0 2pw 5pw rgba(0, 0, 0, 0.1);
+    background-color:lightgrey;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
 /* Style for the container div */
 div {
   text-align: center;
@@ -92,6 +117,10 @@ div {
 
 /* Style for the heading */
 h2 {
+  text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -169,10 +198,8 @@ button:hover {
 .navbar-light .navbar-nav .nav-link:hover {
   color: #7da4ad;
 }
-
-.content {
+/* .content {
   padding-top: 70px;
-  /* Adjust this value as needed */
-}
+} */
 </style>
   

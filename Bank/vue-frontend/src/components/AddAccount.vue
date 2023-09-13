@@ -1,13 +1,13 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid" style="   background-color: #7da4ad;">
-        <a class="navbar-brand" href="#">Mouri</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+  <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="   background-color: #7da4ad;">
+        <a class="navbar-brand" href="#">XYZ Bank</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent"
           data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <router-link to="/" class="nav-link">Home</router-link>           
+              <router-link to="/homeAdmin" class="nav-link">Home</router-link>           
             </li>
             <li class="nav-item">
               <router-link to="/about" class="nav-link">About</router-link>           
@@ -23,7 +23,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
     <div class="container">
         <h1 class="text-center">Add Account</h1>
@@ -54,6 +53,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+  </div>
 </template>
 
 <script>
@@ -106,17 +106,26 @@ export default {
 
 <style scoped>
 
+.main{
+  background-image: url('./images/money.jpg'); /* Specify the path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Text color on top of the background image */
+  padding-top: 100px; 
+}
 
 .container {
-    max-width: 400px;
+    max-width: 30vw;
     margin: 0 auto;
-    margin-top: 70px;
-    padding: 20px;
+    margin-top: 10vh;
+
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color:lightgrey;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 5vw rgba(0, 0, 0, 0.1);
+    background-color: lightgrey;
+    margin-bottom: 10vw;
 }
+
 
 h1 {
     text-align: center;
@@ -153,7 +162,7 @@ label {
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #555;
 }
 
 .navbar-light .navbar-brand {

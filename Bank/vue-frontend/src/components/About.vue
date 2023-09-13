@@ -1,7 +1,7 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container-fluid" style="   background-color: #7da4ad;">
-        <a class="navbar-brand" href="#">Mouri</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+  <div class="about-page">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="   background-color: #7da4ad;">
+        <a class="navbar-brand" href="#">  XYZ Bank</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent"
           data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -23,7 +23,6 @@
             </li>
           </ul>
         </div>
-      </div>
     </nav>
     <div class="container mt-5">
       <h1 class="mb-4">About Our Bank</h1>
@@ -52,71 +51,34 @@
         </p>
       </div>
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'AboutPage',
-  };
-  </script>
-  
-  <style scoped>
-  /* Add styles for your About page here */
-  /* Example: */
-  .container {
-    padding: 20px;
-  }
+  </div>
+</template>
 
-  
-.navbar-light .navbar-brand {
-  color: #fff;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
+<script>
+export default {
+  name: 'AboutPage',
+};
+</script>
+
+<style scoped>
+/* Add styles for your About page here */
+.about-page {
+  background-image: url('./images/bank1.avif'); /* Specify the path to your background image */
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Text color on top of the background image */
+  padding: 15vw; /* Adjust padding as needed */
+  /* padding-bottom: 20vh; */
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
-  color: #fff;
-
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for content container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Drop shadow for content container */
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #fff;
-}
+/* Your existing navbar styles here */
 
-.navbar-toggler {
-  color: #7da4ad;
-}
-
-.navbar-nav {
-  text-align: center;
-}
-
-.nav-link {
-  padding: .2rem 1rem;
-}
-
-.nav-link.active,
-.nav-link:focus {
-  color: #7da4ad;
-
-}
-
-.navbar-toggler {
-  padding: 1px 5px;
-  font-size: 18px;
-  line-height: 0.3;
-}
-
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #7da4ad;
-}
-  
-  /* You can add more custom styles as needed */
-  </style>
-  
+/* You can add more custom styles as needed */
+</style>

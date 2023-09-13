@@ -70,7 +70,7 @@ const routes = [
     path: "/addAccount",
   },
   {
-    name: "Login",
+    name: "LoginDetail",
     component: Login,
     path: "/login",
   },
