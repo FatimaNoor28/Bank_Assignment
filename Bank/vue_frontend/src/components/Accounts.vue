@@ -31,7 +31,7 @@
 
       <h1 class="text-center"> Accounts List</h1>
 
-      <table class="table table-striped table-dark">
+      <table id="AccountTable" class="table table-striped table-dark">
         <thead>
           <tr>
             <th> Account Id</th>

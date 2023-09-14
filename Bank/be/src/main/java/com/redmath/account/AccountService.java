@@ -11,6 +11,7 @@ import com.redmath.users.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -39,6 +40,7 @@ public class AccountService //implements UserDetailsService
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Lazy
     public AccountService(AccountRepository repository, UserService userService, BalanceService balanceService, TransactionService transactionService)
     {
         this.repository = repository;

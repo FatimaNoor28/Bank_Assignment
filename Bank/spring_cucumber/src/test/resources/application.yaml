@@ -1,0 +1,8 @@
+page.login:
+  url: http://localhost:8081/login
+  txt-username.xpath: /html/body/div/body/main/div/body/div/div/form/div[1]/input
+  txt-password.xpath: /html/body/div/body/main/div/body/div/div/form/div[2]/input
+  btn-login.xpath: /html/body/div/body/main/div/body/div/div/form/button
+  Adminhome-url: http://localhost:8081/homeAdmin
+#  txt-search.xpath: //*[@id="APjFqb"]
+#  btn-search.xpath: /html/body/div[1]/div[3]/form/div[1]/div[1]/div[4]/center/input[1]

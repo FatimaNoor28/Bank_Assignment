@@ -42,13 +42,13 @@
 
           <div class="form-group" align="left">
             <label>User Name</label>
-            <input type="name" v-model="user.userName" class="form-control" placeholder="User Name" align="center">
+            <input id="username-input" type="name" v-model="user.userName" class="form-control" placeholder="User Name" align="center">
           </div>
 
 
           <div class="form-group" align="left">
             <label>Password</label>
-            <input type="password" v-model="user.password" class="form-control" placeholder="Password" align="center">
+            <input id="password-input" type="password" v-model="user.password" class="form-control" placeholder="Password" align="center">
           </div>
           <br />
 
